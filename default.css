@@ -1,0 +1,50 @@
+@import url('schema.css');
+
+.containerbasket .sgrlogo, .containerbasket .sgrlogo:before {border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
+.containerbasket .boxmoment{border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
+.containerbasket .containerfouls {background: transparent; display: flex; flex-flow: row nowrap; justify-content: space-around; align-items: stretch; align-content: stretch;}
+.containerbasket .containerfouls .boxfouls {width: calc(100% / 5); margin: 0.5vw 1vw;}
+.containerbasket .containerfouls .boxon {background: #FCF506;}
+.containerbasket .containerfouls .boxon:last-child {background: var(--red);}
+.containerbasket .boxhometeam, .containerbasket .boxawayteam {display: flex; align-items: center; justify-content: center;}
+.containerbasket {position: relative; margin-top: 2vw; grid-template: auto / 9% repeat(3, 10%) 5% 2% 5% repeat(3, 10%) 10% 9%;}
+.containerbasket .sgrlogo			{grid-row: 1/2; grid-column: 1/2;}
+.containerbasket .boxhometeam		{grid-row: 1/2; grid-column: 2/5;}
+.containerbasket .boxhomepoints		{grid-row: 1/2; grid-column: 5/6;}
+.containerbasket .space				{grid-row: 1/2; grid-column: 6/7;}
+.containerbasket .boxawaypoints		{grid-row: 1/2; grid-column: 7/8;}
+.containerbasket .boxawayteam		{grid-row: 1/2; grid-column: 8/11;}
+.containerbasket .boxtimer			{grid-row: 1/2; grid-column: 11/12;}
+.containerbasket .boxmoment			{grid-row: 1/2; grid-column: 12/13;}
+.containerbasket .boxhomefouls		{grid-row: 2/3; grid-column: 2/3;}
+.containerbasket .boxhometimeouts	{grid-row: 2/3; grid-column: 3/4;}
+.containerbasket .boxhomebonus		{grid-row: 2/3; grid-column: 4/5;}
+.containerbasket .boxawaybonus		{grid-row: 2/3; grid-column: 8/9;}
+.containerbasket .boxawaytimeouts	{grid-row: 2/3; grid-column: 9/10;}
+.containerbasket .boxawayfouls		{grid-row: 2/3; grid-column: 10/11;}
+.containerbasket .boxhomepoints, .containerbasket .boxawaypoints {transform: scale(1.25);}
+.containerbasket .boxhomepoints {transform-origin: center right;}
+.containerbasket .boxawaypoints {transform-origin: center left;}
+.containerbasket .space {transform-origin: center center;}
+.containerbasket .secondliners {font-size: .7em; background: var(--bkg); color: #000; font-weight: bold;border-top: solid 1px #ccc; border-right: solid 1px #ddd;}
+.containerbasket .boxhomebonus, .containerbasket .boxawayfouls {border-right: none;}
+.containerbasket .boxhomebonus, .containerbasket .boxawayfouls {border-bottom-right-radius: 2vw;}
+.containerbasket .boxawaybonus, .containerbasket .boxhomefouls {border-bottom-left-radius: 2vw;}
+.containerbasket .boxbonusoff {color: transparent;}
+.containerbasket .boxbonuson {color: var(--textinverted); background: var(--bkgovertime);}
+.containerbasket .boxfouls:before {content: "FOULS:"; margin-right: .1em; color: #333; font-weight: normal;}
+.containerbasket .boxtimeouts:before {content: "TIMEOUT:"; margin-right: .1em; color: #333; font-weight: normal;}
+.containerbasket .secondlinersoff {display:none;}
+.containerbasket .secondlinersEUoff {display:none;}
+.containerbasket .secondlinersEU { display:flex; gap:0.5vw; justify-content:flex-start;}
+.containerbasket .EUfouls {width: calc(80% / 5); background:yellow; height:0.8vw; margin-top: 0.5vw;}
+.containerbasket .EUfouls:nth-child(5) {background:red;}
+.containerbasket .boxhomefoulsEU {grid-row:3/4; grid-column:2/5; flex-flow: row nowrap;}
+.containerbasket .boxawayfoulsEU {grid-row:3/4; grid-column:8/11; flex-flow: row-reverse nowrap;}
+
+
+
+
+
+
+

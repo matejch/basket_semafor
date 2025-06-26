@@ -1,0 +1,186 @@
+.wrapper {
+    display: grid;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.item_border {
+    border: #990000 2px solid;
+}
+
+.large_score {
+    grid-auto-columns: minmax(200px, 2fr);
+    font-size: 18vw;
+    align-self: center;
+}
+
+.bonus_info {
+    font-size: 8vw;
+    align-self: center;
+}
+
+.team_name {
+    font-size: 6vw;
+    align-self: center;
+}
+
+.box_label {
+    grid-column: 1/6;
+}
+
+.first_line {
+    grid-row: 1;
+    grid-auto-rows: minmax(200px, auto);
+}
+
+.second_line {
+    grid-row: 2;
+}
+
+.third_line {
+    grid-row: 3;
+}
+
+.fourth_line {
+    grid-row: 4;
+}
+
+.box_team_a_logo {
+    grid-column: 1;
+}
+
+.box_team_a_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.box_team_a_name {
+    grid-column: 2/3;
+
+
+}
+
+.box_team_b_logo {
+    grid-column: 5/6;
+
+}
+
+.box_team_b_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.box_team_b_name {
+    grid-column: 4/5;
+
+
+}
+
+.box_team_a_score {
+    grid-column: 2/3;
+
+}
+
+.box_team_b_score {
+    grid-column: 4/5;
+
+}
+
+.box_space_1 {
+    grid-column: 3/4;
+
+}
+
+.box_space_2 {
+    grid-column: 3/4;
+
+}
+
+.box_time {
+    grid-column: 2/5;
+    font-size: 12vw;
+}
+
+/*.box_team_a_info {*/
+/*    grid-column: 1;*/
+/*    font-size: 2vw;*/
+/*    align-self: center;*/
+/*}*/
+
+/*.box_team_b_info {*/
+/*    grid-column: 5/6;*/
+/*    font-size: 2vw;*/
+/*    align-self: center;;*/
+/*}*/
+
+.red {
+    background: red;
+}
+.normal {
+    background: white;
+}
+
+.box_team_a_commands {
+    grid-column: 1/3;
+}
+
+.box_team_b_commands {
+    grid-column: 4/6;
+}
+
+.box_generalcommands {
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: max-content;
+}
+
+.box_generalcommands div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5vh 0;
+}
+
+.play-button-row {
+    margin-bottom: 1vh !important;
+}
+
+.other-buttons-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap !important;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.other-buttons-row .button {
+    font-size: 1.8vw;
+    padding: 0.8vh 0.8vw;
+    white-space: nowrap;
+}
+
+.button {
+    font-size: 2.5vw;
+    padding: 1vh 1vw;
+    margin: 0.5vh 0.5vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+}

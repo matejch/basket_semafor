@@ -1,0 +1,61 @@
+/* INSTRUCTION and example for customize BASKETBALL scoreboard:
+Each element has one or more classes, so you can control one or more elements at the same time.
+On the left you can read every single element with his class */
+
+/*--- First step - FONTS: CSS involves embedding fonts at the beginning of the document. You can import and use webfont, for example here we imported a Google font (https://fonts.google.com/) ---*/
+@import url(google_fonts.css);
+
+/* Every scoreboard has a unique container (VOLLEYBALL = containervolley / BASKETBALL = containerbasket etc.. read them with your browser code inspector). You can use them for override styles */
+
+
+
+.containerbasket {grid-template: auto / repeat(6, 1fr); font-size:10vw; font-family: 'Bebas Neue', cursive;}
+
+.containerbasket .sgrlogo {grid-row: 1/2; grid-column: 1/3;}
+.containerbasket .boxmoment {grid-row: 1/2; grid-column: 3/4;}
+.containerbasket .boxtimer {grid-row: 1/2; grid-column: 4/6;}
+.containerbasket .boxhometeam {grid-row: 2/3; grid-column: 1/3;}
+.containerbasket .boxhomepoints {grid-row: 2/3; grid-column: 3/4;}
+.containerbasket .boxawayteam {grid-row: 2/3; grid-column: 4/6;}
+.containerbasket .boxawaypoints {grid-row: 2/3; grid-column: 6/7;}
+
+.containerbasket .boxhomefouls {grid-row: 3/4; grid-column: 2/3;}
+.containerbasket .boxhometimeouts {grid-row: 3/4; grid-column: 1/2;}
+.containerbasket .boxhomebonus {grid-row: 3/4; grid-column: 3/4;}
+
+.containerbasket .boxawayfouls {grid-row: 3/4; grid-column: 5/6;}
+.containerbasket .boxawaytimeouts {grid-row: 3/4; grid-column: 4/5;}
+.containerbasket .boxawaybonus {grid-row: 3/4; grid-column: 6/7;}
+
+.containerbasket .boxhomepoints, .containerbasket .boxawaypoints {transform: none;}
+.containerbasket .space {display:none;}
+.containerbasket .box, .containerbasket .sgrlogo:before {border-radius: 0 !important;}
+
+.containerbasket:after {content: ""; background:url(https://www.flaticon.com/svg/static/icons/svg/33/33838.svg) no-repeat center; grid-row:1/2; grid-column: 6/7; background-size: 200%; filter: invert(.5);}
+
+.containerbasket .containerbasket {box-sizing: border-box; border: solid 1vw #666;}
+
+
+/* this change labels of Fouls and Timeouts */
+.containerbasket .boxfouls:before {content:"Fouls:"; font-size: .5em;}
+.containerbasket .boxtimeouts:before {content:"Timeout:"; font-size: .5em;}
+.containerbasket .boxbonus {display: flex; justify-content: center; align-items: center; font-size:.4em;}
+
+.containerbasket .boxhometeam, .containerbasket .boxawayteam {position: relative; justify-content: flex-end; padding: 0 2vw;}
+.containerbasket .boxhomepoints, .containerbasket .boxawaypoints {justify-content: center; padding: 0 2vw; text-align:center;}
+
+
+
+/*  INDIANA Styles */
+.containerbasket .boxhometeam {background: linear-gradient(72deg, rgba(0,40,93,1) 0%, rgba(184,180,147,1) 38%, rgba(212,206,181,1) 41%, rgba(253,187,50,1) 100%); }
+.containerbasket .boxhometeam:before {content:""; position:absolute; top:0; left:0; width:50%; height:100%; background:url(https://cdn.shopify.com/s/files/1/0490/0791/9253/files/Pacers-Full-Color.png) no-repeat center;background-size:60%;}
+.containerbasket .boxhomepoints {background:#fdbb32;}
+
+/*  TORONTO Styles */
+.containerbasket .boxawayteam {background:linear-gradient(72deg, rgba(0,0,0,1) 0%, rgba(222,123,123,1) 39%, rgba(227,166,166,1) 41%, rgba(255,0,0,1) 100%);;}
+.containerbasket .boxawayteam:before {content:""; position:absolute; top:0; left:0; width:50%; height:100%; background:url(https://www.nba.com/raptors/sites/raptors/files/raps-1718-mainlogo.png) no-repeat center; background-size:70%;}
+.containerbasket .boxawaypoints {background:#ff0000;}
+
+/*-------------------------------------------------------------------
+---- UNDER: background color and a little spase from margins. PLEASE DO NOT CONSIDER THIS-*/
+body {background:#666;}

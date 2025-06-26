@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NBA TMIN</title>
+    <link rel="stylesheet" href="style.css"/>
+
+    <script src="timer.js" defer></script>
+
+    <script src="keymaster.js" defer></script>
+
+    <script src="htmx.js" defer></script>
+</head>
+<body>
+<div class="wrapper">
+
+    <div id="box_team_a_name" class="box_team_a_name team_name first_line">CHI</div>
+    <div id="box_space_1" class="box_space_1 team_name first_line">Q1</div>
+    <div id="box_team_b_name" class="box_team_b_name team_name first_line">GSW</div>
+    <div id="box_team_a_logo" class="box_team_a_logo second_line"><img src="logos/CHI.svg"></div>
+    <div id="box_team_a_score" class="box_team_a_score large_score second_line">0</div>
+    <div id="box_space_2" class="box_space_2 large_score second_line">-</div>
+    <div id="box_team_b_score" class="box_team_b_score large_score second_line">0</div>
+    <div id="box_team_b_logo" class="box_team_b_logo second_line"><img src="logos/GSW.svg"></div>
+
+
+    <div id="box_team_a_info" class="box_team_a_info bonus_info third_line normal">0</div>
+    <div id="box_time" class="box_time third_line"></div>
+    <div id="box_team_b_info" class="box_team_b_info bonus_info third_line normal">0</div>
+
+
+
+
+    <div id="commands_general" class="fourth_line box_generalcommands">
+        <div>
+            <button id="play" class="button ">play</button>
+        </div>
+        <div>
+			<button id="restore_state" class="button">restore state</button>
+            <button id="next_quarter" class="button">next quarter</button>
+            <button id="set_timer" class="button">set timer</button>
+        </div>
+    </div>
+    <div id="commands_team_a" class="fourth_line box_team_a_commands">
+        <div>
+            <button id="team_a_3" class="button">+3</button>
+            <button id="team_a_2" class="button">+2</button>
+            <button id="team_a_1" class="button">+1</button>
+            <button id="team_a_0" class="button">-1</button>
+        </div>
+        <div>
+            <button id="team_a_add_foul" class="button">+F</button>
+            <button id="team_a_remove_foul" class="button">-F</button>
+<!--            <button id="team_a_add_timeout" class="button">+T</button>-->
+<!--            <button id="team_a_take_timeout" class="button">-T</button>-->
+        </div>
+
+    </div>
+    <div id="commands_team_b" class="fourth_line box_team_b_commands">
+        <div>
+            <button id="team_b_3" class="button">+3</button>
+            <button id="team_b_2" class="button">+2</button>
+            <button id="team_b_1" class="button">+1</button>
+            <button id="team_b_0" class="button">-1</button>
+        </div>
+        <div>
+            <button id="team_b_add_foul" class="button">+F</button>
+            <button id="team_b_remove_foul" class="button">-F</button>
+<!--            <button id="team_b_take_timeout" class="button">-T</button>-->
+<!--            <button id="team_b_add_timeout" class="button">+T</button>-->
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
