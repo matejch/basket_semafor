@@ -46,6 +46,9 @@
 
 .fourth_line {
     grid-row: 4;
+    display: flex;
+    align-items: center;
+    padding: 0.5vh 0;
 }
 
 .box_team_a_logo {
@@ -126,31 +129,38 @@
 
 .box_team_a_commands {
     grid-column: 1/3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .box_team_b_commands {
     grid-column: 4/6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .box_generalcommands {
     grid-column: 3/4;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-width: max-content;
+    gap: 0.5vw;
 }
 
 .box_generalcommands div {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin: 0.5vh 0;
+    align-items: center;
+    margin: 0 0.5vw;
 }
 
 .play-button-row {
-    margin-bottom: 1vh !important;
+    margin-right: 0.5vw !important;
 }
 
 .other-buttons-row {
@@ -159,19 +169,18 @@
     align-items: center;
     flex-wrap: nowrap !important;
     white-space: nowrap;
-    width: 100%;
 }
 
 .other-buttons-row .button {
-    font-size: 1.8vw;
-    padding: 0.8vh 0.8vw;
+    font-size: 1.2vw;
+    padding: 0.6vh 0.6vw;
     white-space: nowrap;
 }
 
 .button {
-    font-size: 2.5vw;
-    padding: 1vh 1vw;
-    margin: 0.5vh 0.5vw;
+    font-size: 1.2vw;
+    padding: 0.8vh 0.8vw;
+    margin: 0.4vh 0.4vw;
     border-radius: 0.5vw;
     cursor: pointer;
     background-color: #f0f0f0;
@@ -183,4 +192,10 @@ body {
     padding: 0;
     overflow: hidden;
     height: 100vh;
+}
+
+.team-buttons-group {
+    display: flex;
+    gap: 0.5vw;
+    margin: 0 1vw;
 }

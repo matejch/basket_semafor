@@ -206,13 +206,18 @@ function init() {
     key('q', team_a_1point);
     key('w', team_a_2point);
     key('e', team_a_3point);
-    
+
+    key('d', team_a_remove_foul);
     key('f', team_a_add_foul);
     key('h', team_b_add_foul);      
+    key('j', team_b_remove_foul);
 
     key('i', team_b_1point);
     key('o', team_b_2point);
     key('p', team_b_3point);
+    key('r', team_a_0point);
+    key('u', team_b_0point);
+    
     
     key('t', play_gong);
 
