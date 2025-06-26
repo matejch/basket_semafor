@@ -96,7 +96,7 @@ function init() {
 
     function play_gong() {
         console.log("Playing gong sound");
-        const gong = new Audio('time.mp3');
+        const gong = new Audio('buzzer.mp3');
         gong.preload = 'auto';
         gong.oncanplaythrough = function() {
             gong.play().catch(error => {
